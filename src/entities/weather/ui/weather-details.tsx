@@ -41,7 +41,7 @@ const getClothingRecommendation = (
     condition === 'rain' ||
     condition === 'storm' ||
     condition === 'snow' ||
-    precipitationProbability >= 40;
+    precipitationProbability >= 60;
 
   if (needsUmbrella) {
     clothing += ', 우산';
