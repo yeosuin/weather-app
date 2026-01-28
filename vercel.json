@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/api/weather/:path*", "destination": "/api/weather" }
+  ]
+}

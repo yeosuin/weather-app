@@ -1,0 +1,1 @@
+export { FavoriteGrid } from './ui';

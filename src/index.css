@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply min-h-screen bg-[#F3F6F8] text-slate-900;
+  }
+}
+
+@layer components {
+  .bento-card {
+    @apply rounded-[2rem] p-6 bg-white border border-gray-100/50 shadow-sm;
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .glass-card {
+    @apply rounded-[2rem] p-6 bg-white/60 backdrop-blur-md;
+  }
+
+  .search-pill {
+    @apply rounded-2xl h-14 px-6;
+    @apply bg-white/80 backdrop-blur-md shadow-sm;
+    @apply focus:ring-2 focus:ring-blue-400 focus:bg-white;
+    @apply outline-none transition-all duration-200;
+  }
+
+  .weather-gradient-card {
+    @apply bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-[2.5rem];
+    @apply shadow-xl shadow-blue-200 relative overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
